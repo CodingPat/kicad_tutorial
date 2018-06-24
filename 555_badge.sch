@@ -1,0 +1,428 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:555_badge
+LIBS:Zilog
+LIBS:dk_Battery-Holders-Clips-Contacts
+LIBS:dk_Slide-Switches
+LIBS:555_badge-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "555 badge"
+Date "2018-06-22"
+Rev "v01"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Tutorial digikey kicad"
+$EndDescr
+$Comp
+L 7555 U1
+U 1 1 5B2D2195
+P 4100 4100
+F 0 "U1" H 3850 4450 60  0000 C CNN
+F 1 "7555" H 4350 3750 60  0000 C CNN
+F 2 "" H 4100 4100 60  0001 C CNN
+F 3 "" H 4100 4100 60  0001 C CNN
+	1    4100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B2D2360
+P 3250 3700
+F 0 "R1" V 3330 3700 50  0000 C CNN
+F 1 "22K" V 3250 3700 50  0000 C CNN
+F 2 "" V 3180 3700 50  0001 C CNN
+F 3 "" H 3250 3700 50  0001 C CNN
+	1    3250 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5B2D23A2
+P 3250 4300
+F 0 "R2" V 3330 4300 50  0000 C CNN
+F 1 "330K" V 3250 4300 50  0000 C CNN
+F 2 "" V 3180 4300 50  0001 C CNN
+F 3 "" H 3250 4300 50  0001 C CNN
+	1    3250 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 5B2D23F2
+P 5150 4350
+F 0 "R3" V 5230 4350 50  0000 C CNN
+F 1 "22K" V 5150 4350 50  0000 C CNN
+F 2 "" V 5080 4350 50  0001 C CNN
+F 3 "" H 5150 4350 50  0001 C CNN
+	1    5150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R5
+U 1 1 5B2D2447
+P 6150 4350
+F 0 "R5" V 6230 4350 50  0000 C CNN
+F 1 "10K" V 6150 4350 50  0000 C CNN
+F 2 "" V 6080 4350 50  0001 C CNN
+F 3 "" H 6150 4350 50  0001 C CNN
+	1    6150 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R4
+U 1 1 5B2D2490
+P 5500 4700
+F 0 "R4" V 5580 4700 50  0000 C CNN
+F 1 "100K" V 5500 4700 50  0000 C CNN
+F 2 "" V 5430 4700 50  0001 C CNN
+F 3 "" H 5500 4700 50  0001 C CNN
+	1    5500 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R7
+U 1 1 5B2D277B
+P 7100 3800
+F 0 "R7" V 7180 3800 50  0000 C CNN
+F 1 "100" V 7100 3800 50  0000 C CNN
+F 2 "" V 7030 3800 50  0001 C CNN
+F 3 "" H 7100 3800 50  0001 C CNN
+	1    7100 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 5B2D27A3
+P 6700 3800
+F 0 "R6" V 6780 3800 50  0000 C CNN
+F 1 "100" V 6700 3800 50  0000 C CNN
+F 2 "" V 6630 3800 50  0001 C CNN
+F 3 "" H 6700 3800 50  0001 C CNN
+	1    6700 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C1
+U 1 1 5B2D27F3
+P 3250 4750
+F 0 "C1" H 3275 4850 50  0000 L CNN
+F 1 "10uF" H 3275 4650 50  0000 L CNN
+F 2 "" H 3288 4600 50  0001 C CNN
+F 3 "" H 3250 4750 50  0001 C CNN
+	1    3250 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP C2
+U 1 1 5B2D2899
+P 5750 4700
+F 0 "C2" H 5775 4800 50  0000 L CNN
+F 1 "100uF" H 5775 4600 50  0000 L CNN
+F 2 "" H 5788 4550 50  0001 C CNN
+F 3 "" H 5750 4700 50  0001 C CNN
+	1    5750 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D2
+U 1 1 5B2D2CF8
+P 7100 3300
+F 0 "D2" H 7100 3400 50  0000 C CNN
+F 1 "LED" H 7100 3200 50  0000 C CNN
+F 2 "" H 7100 3300 50  0001 C CNN
+F 3 "" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5B2D2DA6
+P 6700 3300
+F 0 "D1" H 6700 3400 50  0000 C CNN
+F 1 "LED" H 6700 3200 50  0000 C CNN
+F 2 "" H 6700 3300 50  0001 C CNN
+F 3 "" H 6700 3300 50  0001 C CNN
+	1    6700 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Q_NPN_EBC Q1
+U 1 1 5B2D3799
+P 6600 4350
+F 0 "Q1" H 6800 4400 50  0000 L CNN
+F 1 "Q_NPN_EBC" H 6800 4300 50  0000 L CNN
+F 2 "" H 6800 4450 50  0001 C CNN
+F 3 "" H 6600 4350 50  0001 C CNN
+	1    6600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L BS-7 BAT1
+U 1 1 5B2D3855
+P 2050 3850
+F 0 "BAT1" H 2000 4000 60  0000 R CNN
+F 1 "3V" H 2000 3700 60  0000 R CNN
+F 2 "digikey-footprints:Battery_Holder_Coin_2032_BS-7" H 2250 4050 60  0001 L CNN
+F 3 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" V 2250 4150 60  0001 L CNN
+F 4 "BS-7-ND" H 2250 4250 60  0001 L CNN "Digi-Key_PN"
+F 5 "BS-7" H 2250 4350 60  0001 L CNN "MPN"
+F 6 "Battery Products" H 2250 4450 60  0001 L CNN "Category"
+F 7 "Battery Holders, Clips, Contacts" H 2250 4550 60  0001 L CNN "Family"
+F 8 "http://www.memoryprotectiondevices.com/datasheets/BS-7-datasheet.pdf" H 2250 4650 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/mpd-memory-protection-devices/BS-7/BS-7-ND/389447" H 2250 4750 60  0001 L CNN "DK_Detail_Page"
+F 10 "HOLDER COINCELL 2032 RETAINRCLIP" H 2250 4850 60  0001 L CNN "Description"
+F 11 "MPD (Memory Protection Devices)" H 2250 4950 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2250 5050 60  0001 L CNN "Status"
+	1    2050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L EG1218 S1
+U 1 1 5B2D3911
+P 2150 3200
+F 0 "S1" H 2000 3290 50  0000 C CNN
+F 1 "EG1218" H 2150 2990 50  0000 C CNN
+F 2 "digikey-footprints:Switch_Slide_11.6x4mm_EG1218" H 2350 3400 50  0001 L CNN
+F 3 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 2350 3500 60  0001 L CNN
+F 4 "EG1903-ND" H 2350 3600 60  0001 L CNN "Digi-Key_PN"
+F 5 "EG1218" H 2350 3700 60  0001 L CNN "MPN"
+F 6 "Switches" H 2350 3800 60  0001 L CNN "Category"
+F 7 "Slide Switches" H 2350 3900 60  0001 L CNN "Family"
+F 8 "http://spec_sheets.e-switch.com/specs/P040040.pdf" H 2350 4000 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/e-switch/EG1218/EG1903-ND/101726" H 2350 4100 60  0001 L CNN "DK_Detail_Page"
+F 10 "SWITCH SLIDE SPDT 200MA 30V" H 2350 4200 60  0001 L CNN "Description"
+F 11 "E-Switch" H 2350 4300 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 2350 4400 60  0001 L CNN "Status"
+	1    2150 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5B2D3AD2
+P 2050 4450
+F 0 "#PWR1" H 2050 4200 50  0001 C CNN
+F 1 "GND" H 2050 4300 50  0000 C CNN
+F 2 "" H 2050 4450 50  0001 C CNN
+F 3 "" H 2050 4450 50  0001 C CNN
+	1    2050 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR4
+U 1 1 5B2D3B11
+P 3250 5200
+F 0 "#PWR4" H 3250 4950 50  0001 C CNN
+F 1 "GND" H 3250 5050 50  0000 C CNN
+F 2 "" H 3250 5200 50  0001 C CNN
+F 3 "" H 3250 5200 50  0001 C CNN
+	1    3250 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5B2D3B49
+P 4000 4850
+F 0 "#PWR6" H 4000 4600 50  0001 C CNN
+F 1 "GND" H 4000 4700 50  0000 C CNN
+F 2 "" H 4000 4850 50  0001 C CNN
+F 3 "" H 4000 4850 50  0001 C CNN
+	1    4000 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR7
+U 1 1 5B2D3B81
+P 5500 5200
+F 0 "#PWR7" H 5500 4950 50  0001 C CNN
+F 1 "GND" H 5500 5050 50  0000 C CNN
+F 2 "" H 5500 5200 50  0001 C CNN
+F 3 "" H 5500 5200 50  0001 C CNN
+	1    5500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 5B2D3BAC
+P 2150 2700
+F 0 "#PWR2" H 2150 2550 50  0001 C CNN
+F 1 "VCC" H 2150 2850 50  0000 C CNN
+F 2 "" H 2150 2700 50  0001 C CNN
+F 3 "" H 2150 2700 50  0001 C CNN
+	1    2150 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR3
+U 1 1 5B2D3BEB
+P 3250 3450
+F 0 "#PWR3" H 3250 3300 50  0001 C CNN
+F 1 "VCC" H 3250 3600 50  0000 C CNN
+F 2 "" H 3250 3450 50  0001 C CNN
+F 3 "" H 3250 3450 50  0001 C CNN
+	1    3250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR5
+U 1 1 5B2D3C23
+P 4000 3450
+F 0 "#PWR5" H 4000 3300 50  0001 C CNN
+F 1 "VCC" H 4000 3600 50  0000 C CNN
+F 2 "" H 4000 3450 50  0001 C CNN
+F 3 "" H 4000 3450 50  0001 C CNN
+	1    4000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR9
+U 1 1 5B2D3C5B
+P 6700 3050
+F 0 "#PWR9" H 6700 2900 50  0001 C CNN
+F 1 "VCC" H 6700 3200 50  0000 C CNN
+F 2 "" H 6700 3050 50  0001 C CNN
+F 3 "" H 6700 3050 50  0001 C CNN
+	1    6700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR11
+U 1 1 5B2D3C93
+P 7100 3050
+F 0 "#PWR11" H 7100 2900 50  0001 C CNN
+F 1 "VCC" H 7100 3200 50  0000 C CNN
+F 2 "" H 7100 3050 50  0001 C CNN
+F 3 "" H 7100 3050 50  0001 C CNN
+	1    7100 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 4050 2050 4450
+Wire Wire Line
+	2050 3400 2050 3650
+Wire Wire Line
+	2150 2700 2150 3000
+Wire Wire Line
+	3250 3450 3250 3550
+Wire Wire Line
+	3250 3850 3250 4150
+Wire Wire Line
+	3250 4450 3250 4600
+Wire Wire Line
+	3250 4900 3250 5200
+Wire Wire Line
+	6700 3050 6700 3150
+Wire Wire Line
+	7100 3050 7100 3150
+Wire Wire Line
+	6700 3450 6700 3650
+Wire Wire Line
+	7100 3450 7100 3650
+Wire Wire Line
+	3600 4000 3250 4000
+Connection ~ 3250 4000
+Wire Wire Line
+	3600 4100 3500 4100
+Wire Wire Line
+	3500 4100 3500 4500
+Wire Wire Line
+	3500 4500 3250 4500
+Connection ~ 3250 4500
+Wire Wire Line
+	3600 4200 3500 4200
+Connection ~ 3500 4200
+Wire Wire Line
+	4000 3450 4000 3600
+Wire Wire Line
+	4000 3500 4200 3500
+Wire Wire Line
+	4200 3500 4200 3600
+Connection ~ 4000 3500
+Wire Wire Line
+	4000 4600 4000 4850
+Wire Wire Line
+	4650 4100 4650 4350
+Wire Wire Line
+	4650 4350 5000 4350
+$Comp
+L GND #PWR8
+U 1 1 5B2D4920
+P 5750 5200
+F 0 "#PWR8" H 5750 4950 50  0001 C CNN
+F 1 "GND" H 5750 5050 50  0000 C CNN
+F 2 "" H 5750 5200 50  0001 C CNN
+F 3 "" H 5750 5200 50  0001 C CNN
+	1    5750 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 4850 5750 5200
+Wire Wire Line
+	5500 4850 5500 5200
+Wire Wire Line
+	5300 4350 6000 4350
+Wire Wire Line
+	5500 4350 5500 4550
+Connection ~ 5500 4350
+Wire Wire Line
+	5750 4350 5750 4550
+Connection ~ 5750 4350
+Wire Wire Line
+	6300 4350 6400 4350
+$Comp
+L GND #PWR10
+U 1 1 5B2D4A6E
+P 6700 4750
+F 0 "#PWR10" H 6700 4500 50  0001 C CNN
+F 1 "GND" H 6700 4600 50  0000 C CNN
+F 2 "" H 6700 4750 50  0001 C CNN
+F 3 "" H 6700 4750 50  0001 C CNN
+	1    6700 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 4550 6700 4750
+Wire Wire Line
+	6700 4150 6700 3950
+Wire Wire Line
+	6700 4050 7100 4050
+Wire Wire Line
+	7100 4050 7100 3950
+Connection ~ 6700 4050
+$EndSCHEMATC
